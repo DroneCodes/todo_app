@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 30,
               ),
               SizedBox(
-                height: 50,
+                height:90,
                 child: Image.asset(
                   "assets/logo.png",
                 ),
@@ -43,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 padding: EdgeInsets.symmetric(
                   horizontal: 12,
                 ),
-                child: Text("Log In to your Account"),
+                child: Text("Log In to your Account", style: TextStyle(color: Colors.black, fontSize: 20,),),
               ),
               const SizedBox(
                 height: 30,
