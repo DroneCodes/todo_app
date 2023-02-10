@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  final Function()? press;
+  final Function() press;
   final Color backgroundColor;
   final Color borderColor;
   final String text;
@@ -10,7 +10,7 @@ class CustomButton extends StatelessWidget {
 
   const CustomButton(
       {Key? key,
-        this.press,
+        required this.press,
         required this.backgroundColor,
         required this.borderColor,
         required this.text,
