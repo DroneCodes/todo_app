@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:todo_app/auth/auth_gate.dart';
 import 'package:todo_app/auth/login_screen.dart';
 import 'package:todo_app/onboarding/onboading_screen.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Get Going',
-      home: showHome ? LoginScreen() : OnboardingScreen(),
+      home: showHome ? const AuthGate(): const OnboardingScreen(),
     );
   }
 }
